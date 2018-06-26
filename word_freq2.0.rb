@@ -16,26 +16,26 @@ print "Please enter the name/path of the file you wish to write results to: "
 output_file_name = gets.chomp
 output_file = File.open("results/#{output_file_name}", "w")
 
-print "How would you like to output?"
-puts "(T)ext or (C)sv?"
-file_ext = gets.chomp
-file_ext = file_ext.downcase
+# print "How would you like to output?"
+# puts "(T)ext or (C)sv?"
+# file_ext = gets.chomp
+# file_ext = file_ext.downcase
 
-if file_ext == "t"|| file_ext == "text"|| file_ext == "txt"|| file_ext == ".txt"
-	output_file_name = "#{output_file_name}.txt"
-	puts output_file_name
-elsif file_ext == "c"||file_ext == "csv"||file_ext == ".csv"
-	output_file_name = "#{output_file_name}.csv"
-else
-	puts "File_ext error."
-	exit
-end
+# if file_ext == "t" || file_ext == "text" || file_ext == "txt" || file_ext == ".txt"
+# 	output_file_name = "#{output_file_name}.txt"
+# 	puts output_file_name
+# elsif file_ext == "c"||file_ext == "csv"||file_ext == ".csv"
+# 	output_file_name = "#{output_file_name}.csv"
+# else
+# 	puts "File_ext error."
+# 	exit
+# end
 
 
 
-print file_ext
-
-exit
+# print file_ext
+#
+# exit
 
 frequency = Hash.new(0)
 
