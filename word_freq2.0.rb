@@ -8,11 +8,13 @@ puts
 system "ls texts"
 puts
 puts
-print "Pleases enter the name/path of the file you wish to analyse: "
+print "Pleases enter the path of the file you wish to analyse: "
+print "e.g: two_cities.txt"
 input_file_name = gets.chomp
 input_file = File.open("texts/#{input_file_name}", "r")
 
-print "Please enter the name/path of the file you wish to write results to: "
+print "Please enter the path of the file you wish to write results to: "
+print "e.g: results.txt; word_frequency .csv"
 output_file_name = gets.chomp
 output_file = File.open("results/#{output_file_name}", "w")
 
